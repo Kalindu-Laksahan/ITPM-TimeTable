@@ -23,7 +23,7 @@ namespace Dashboard
         {
             
             con.Open();
-            SqlCommand command = new SqlCommand("insert into Tag values ('" + textTagCode.Text + "','" + textTagName.Text + "','"+textRelatedTag.Text+"')", con);
+            SqlCommand command = new SqlCommand("insert into Tag(TagCode,TagName,RelatedTag) values ('" + textTagCode.Text + "','" + textTagName.Text + "','"+textRelatedTag.Text+"')", con);
             command.ExecuteNonQuery();
             MessageBox.Show("success");
             con.Close();
@@ -43,7 +43,7 @@ namespace Dashboard
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("update Tag set TagCode ='"+textTagCodeUp.Text+"', TagName ='"+textTagNameUP.Text+"', RelatedTag ='"+textRelatedTagUP.Text+"' where TagCode = '"+textTagCodeUp.Text+"' ", con);
+            SqlCommand command = new SqlCommand("update Tag set TagCode ='"+textTagCodeUp.Text+"', TagName ='"+textTagNameUP.Text+"', RelatedTag ='"+textRelatedTagUP.Text+ "' where ColumnID = " + dataGridViewTag.SelectedCells[0].Value.ToString() + " ", con);
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated");
@@ -62,7 +62,7 @@ namespace Dashboard
                 if (MessageBox.Show("Are you Sure To Delete", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     con.Open();
-                    SqlCommand command = new SqlCommand("Delete Tag  where TagCode = '" + textTagCodeUp.Text + "' ", con);
+                    SqlCommand command = new SqlCommand("Delete Tag  where ColumnID = " + dataGridViewTag.SelectedCells[0].Value.ToString() + " ", con);
                     command.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Deleted");
@@ -81,13 +81,13 @@ namespace Dashboard
         private void btnEdit_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("select TagCode,TagName,RelatedTag from Tag  where TagCode = '" + textTagCodeUp.Text + "' ", con);
+            SqlCommand command = new SqlCommand("select ColumnID,TagCode,TagName,RelatedTag from Tag  where ColumnID = "+ dataGridViewTag.SelectedCells[0].Value.ToString()+ " ", con);
             SqlDataReader srd = command.ExecuteReader();
             while (srd.Read())
             {
-                textTagCodeUp.Text = srd.GetValue(0).ToString();
-                textTagNameUP.Text = srd.GetValue(1).ToString();
-                textRelatedTagUP.Text = srd.GetValue(2).ToString();
+                textTagCodeUp.Text = srd.GetValue(1).ToString();
+                textTagNameUP.Text = srd.GetValue(2).ToString();
+                textRelatedTagUP.Text = srd.GetValue(3).ToString();
             }
 
             con.Close();

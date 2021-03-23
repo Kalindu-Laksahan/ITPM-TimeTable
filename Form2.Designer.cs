@@ -30,23 +30,26 @@ namespace Dashboard
         private void InitializeComponent()
         {
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnEditUP = new System.Windows.Forms.Button();
+            this.btnUpdateGroup = new System.Windows.Forms.Button();
+            this.btnGenerateUP = new System.Windows.Forms.Button();
             this.dataGridViewStudentGroup = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDeleteUP = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textSubGroupIDup = new System.Windows.Forms.TextBox();
+            this.textGroupIDup = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboProgramUP = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericSubGroupNumUP = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.numericGroupNumUP = new System.Windows.Forms.NumericUpDown();
+            this.comboSemUP = new System.Windows.Forms.ComboBox();
+            this.comboYearUP = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnGenerateID = new System.Windows.Forms.Button();
             this.btnGroupInsertClear = new System.Windows.Forms.Button();
             this.btnGroupInsert = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,8 +68,8 @@ namespace Dashboard
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentGroup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSubGroupNumUP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGroupNumUP)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSubGroupNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericGroupNum)).BeginInit();
@@ -76,21 +79,23 @@ namespace Dashboard
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage2.Controls.Add(this.btnEditUP);
+            this.tabPage2.Controls.Add(this.btnUpdateGroup);
+            this.tabPage2.Controls.Add(this.btnGenerateUP);
             this.tabPage2.Controls.Add(this.dataGridViewStudentGroup);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.btnDeleteUP);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.textSubGroupIDup);
+            this.tabPage2.Controls.Add(this.textGroupIDup);
             this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.comboBox4);
+            this.tabPage2.Controls.Add(this.comboProgramUP);
             this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.numericUpDown3);
+            this.tabPage2.Controls.Add(this.numericSubGroupNumUP);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.numericUpDown4);
-            this.tabPage2.Controls.Add(this.comboBox5);
-            this.tabPage2.Controls.Add(this.comboBox6);
+            this.tabPage2.Controls.Add(this.numericGroupNumUP);
+            this.tabPage2.Controls.Add(this.comboSemUP);
+            this.tabPage2.Controls.Add(this.comboYearUP);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
@@ -98,6 +103,45 @@ namespace Dashboard
             this.tabPage2.Size = new System.Drawing.Size(870, 482);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Manage Groups";
+            // 
+            // btnEditUP
+            // 
+            this.btnEditUP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEditUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditUP.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEditUP.Location = new System.Drawing.Point(683, 217);
+            this.btnEditUP.Name = "btnEditUP";
+            this.btnEditUP.Size = new System.Drawing.Size(150, 35);
+            this.btnEditUP.TabIndex = 31;
+            this.btnEditUP.Text = "Edit";
+            this.btnEditUP.UseVisualStyleBackColor = false;
+            this.btnEditUP.Click += new System.EventHandler(this.btnEditUP_Click);
+            // 
+            // btnUpdateGroup
+            // 
+            this.btnUpdateGroup.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUpdateGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateGroup.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnUpdateGroup.Location = new System.Drawing.Point(683, 352);
+            this.btnUpdateGroup.Name = "btnUpdateGroup";
+            this.btnUpdateGroup.Size = new System.Drawing.Size(150, 35);
+            this.btnUpdateGroup.TabIndex = 30;
+            this.btnUpdateGroup.Text = "Update";
+            this.btnUpdateGroup.UseVisualStyleBackColor = false;
+            this.btnUpdateGroup.Click += new System.EventHandler(this.btnUpdateGroup_Click);
+            // 
+            // btnGenerateUP
+            // 
+            this.btnGenerateUP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGenerateUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateUP.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnGenerateUP.Location = new System.Drawing.Point(683, 282);
+            this.btnGenerateUP.Name = "btnGenerateUP";
+            this.btnGenerateUP.Size = new System.Drawing.Size(150, 35);
+            this.btnGenerateUP.TabIndex = 29;
+            this.btnGenerateUP.Text = "Generate ID";
+            this.btnGenerateUP.UseVisualStyleBackColor = false;
+            this.btnGenerateUP.Click += new System.EventHandler(this.btnGenerateUP_Click);
             // 
             // dataGridViewStudentGroup
             // 
@@ -109,29 +153,18 @@ namespace Dashboard
             this.dataGridViewStudentGroup.Size = new System.Drawing.Size(806, 137);
             this.dataGridViewStudentGroup.TabIndex = 28;
             // 
-            // button4
+            // btnDeleteUP
             // 
-            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(683, 343);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 35);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(683, 260);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 35);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnDeleteUP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDeleteUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteUP.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnDeleteUP.Location = new System.Drawing.Point(683, 415);
+            this.btnDeleteUP.Name = "btnDeleteUP";
+            this.btnDeleteUP.Size = new System.Drawing.Size(150, 35);
+            this.btnDeleteUP.TabIndex = 27;
+            this.btnDeleteUP.Text = "Delete";
+            this.btnDeleteUP.UseVisualStyleBackColor = false;
+            this.btnDeleteUP.Click += new System.EventHandler(this.btnDeleteUP_Click);
             // 
             // label7
             // 
@@ -151,19 +184,19 @@ namespace Dashboard
             this.label8.TabIndex = 24;
             this.label8.Text = "Group ID";
             // 
-            // textBox3
+            // textSubGroupIDup
             // 
-            this.textBox3.Location = new System.Drawing.Point(374, 423);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 27);
-            this.textBox3.TabIndex = 23;
+            this.textSubGroupIDup.Location = new System.Drawing.Point(374, 423);
+            this.textSubGroupIDup.Name = "textSubGroupIDup";
+            this.textSubGroupIDup.Size = new System.Drawing.Size(220, 27);
+            this.textSubGroupIDup.TabIndex = 23;
             // 
-            // textBox4
+            // textGroupIDup
             // 
-            this.textBox4.Location = new System.Drawing.Point(374, 319);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 27);
-            this.textBox4.TabIndex = 22;
+            this.textGroupIDup.Location = new System.Drawing.Point(374, 319);
+            this.textGroupIDup.Name = "textGroupIDup";
+            this.textGroupIDup.Size = new System.Drawing.Size(220, 27);
+            this.textGroupIDup.TabIndex = 22;
             // 
             // label9
             // 
@@ -174,20 +207,20 @@ namespace Dashboard
             this.label9.TabIndex = 21;
             this.label9.Text = "Program";
             // 
-            // comboBox4
+            // comboProgramUP
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.comboProgramUP.FormattingEnabled = true;
+            this.comboProgramUP.Items.AddRange(new object[] {
             "IT",
             "SE",
             "CSNE",
             "BS",
             "EN"});
-            this.comboBox4.Location = new System.Drawing.Point(374, 217);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(220, 28);
-            this.comboBox4.TabIndex = 20;
-            this.comboBox4.Text = "Program";
+            this.comboProgramUP.Location = new System.Drawing.Point(374, 217);
+            this.comboProgramUP.Name = "comboProgramUP";
+            this.comboProgramUP.Size = new System.Drawing.Size(220, 28);
+            this.comboProgramUP.TabIndex = 20;
+            this.comboProgramUP.Text = "Program";
             // 
             // label10
             // 
@@ -198,12 +231,12 @@ namespace Dashboard
             this.label10.TabIndex = 19;
             this.label10.Text = "Sub Group Number";
             // 
-            // numericUpDown3
+            // numericSubGroupNumUP
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(27, 424);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(220, 27);
-            this.numericUpDown3.TabIndex = 18;
+            this.numericSubGroupNumUP.Location = new System.Drawing.Point(27, 424);
+            this.numericSubGroupNumUP.Name = "numericSubGroupNumUP";
+            this.numericSubGroupNumUP.Size = new System.Drawing.Size(220, 27);
+            this.numericSubGroupNumUP.TabIndex = 18;
             // 
             // label11
             // 
@@ -214,38 +247,38 @@ namespace Dashboard
             this.label11.TabIndex = 17;
             this.label11.Text = "Group Number";
             // 
-            // numericUpDown4
+            // numericGroupNumUP
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(27, 332);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(220, 27);
-            this.numericUpDown4.TabIndex = 16;
+            this.numericGroupNumUP.Location = new System.Drawing.Point(27, 332);
+            this.numericGroupNumUP.Name = "numericGroupNumUP";
+            this.numericGroupNumUP.Size = new System.Drawing.Size(220, 27);
+            this.numericGroupNumUP.TabIndex = 16;
             // 
-            // comboBox5
+            // comboSemUP
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Semester 1",
-            "Semester 2"});
-            this.comboBox5.Location = new System.Drawing.Point(135, 217);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(110, 28);
-            this.comboBox5.TabIndex = 15;
-            this.comboBox5.Text = "Semester 1";
+            this.comboSemUP.FormattingEnabled = true;
+            this.comboSemUP.Items.AddRange(new object[] {
+            "S1",
+            "S2"});
+            this.comboSemUP.Location = new System.Drawing.Point(135, 217);
+            this.comboSemUP.Name = "comboSemUP";
+            this.comboSemUP.Size = new System.Drawing.Size(110, 28);
+            this.comboSemUP.TabIndex = 15;
+            this.comboSemUP.Text = "Semester ";
             // 
-            // comboBox6
+            // comboYearUP
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.comboYearUP.FormattingEnabled = true;
+            this.comboYearUP.Items.AddRange(new object[] {
             "Year 1",
             "Year 2",
             "Year 3",
             "Year 4"});
-            this.comboBox6.Location = new System.Drawing.Point(27, 217);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(110, 28);
-            this.comboBox6.TabIndex = 14;
-            this.comboBox6.Text = "Year 1";
+            this.comboYearUP.Location = new System.Drawing.Point(27, 217);
+            this.comboYearUP.Name = "comboYearUP";
+            this.comboYearUP.Size = new System.Drawing.Size(110, 28);
+            this.comboYearUP.TabIndex = 14;
+            this.comboYearUP.Text = "Year 1";
             // 
             // label12
             // 
@@ -259,6 +292,7 @@ namespace Dashboard
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage1.Controls.Add(this.btnGenerateID);
             this.tabPage1.Controls.Add(this.btnGroupInsertClear);
             this.tabPage1.Controls.Add(this.btnGroupInsert);
             this.tabPage1.Controls.Add(this.label6);
@@ -281,13 +315,27 @@ namespace Dashboard
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Student Groups";
             // 
+            // btnGenerateID
+            // 
+            this.btnGenerateID.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGenerateID.FlatAppearance.BorderSize = 0;
+            this.btnGenerateID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateID.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnGenerateID.Location = new System.Drawing.Point(325, 416);
+            this.btnGenerateID.Name = "btnGenerateID";
+            this.btnGenerateID.Size = new System.Drawing.Size(150, 35);
+            this.btnGenerateID.TabIndex = 15;
+            this.btnGenerateID.Text = "Generate ID";
+            this.btnGenerateID.UseVisualStyleBackColor = false;
+            this.btnGenerateID.Click += new System.EventHandler(this.btnGenerateID_Click);
+            // 
             // btnGroupInsertClear
             // 
             this.btnGroupInsertClear.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnGroupInsertClear.FlatAppearance.BorderSize = 0;
             this.btnGroupInsertClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGroupInsertClear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnGroupInsertClear.Location = new System.Drawing.Point(463, 416);
+            this.btnGroupInsertClear.Location = new System.Drawing.Point(502, 416);
             this.btnGroupInsertClear.Name = "btnGroupInsertClear";
             this.btnGroupInsertClear.Size = new System.Drawing.Size(150, 35);
             this.btnGroupInsertClear.TabIndex = 14;
@@ -300,7 +348,7 @@ namespace Dashboard
             this.btnGroupInsert.FlatAppearance.BorderSize = 0;
             this.btnGroupInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGroupInsert.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnGroupInsert.Location = new System.Drawing.Point(194, 416);
+            this.btnGroupInsert.Location = new System.Drawing.Point(131, 416);
             this.btnGroupInsert.Name = "btnGroupInsert";
             this.btnGroupInsert.Size = new System.Drawing.Size(150, 35);
             this.btnGroupInsert.TabIndex = 13;
@@ -356,8 +404,10 @@ namespace Dashboard
             "IT",
             "SE",
             "CSNE",
-            "BS",
-            "EN"});
+            "CS",
+            "ISE",
+            "DS",
+            "En"});
             this.comboPrg.Location = new System.Drawing.Point(486, 121);
             this.comboPrg.Name = "comboPrg";
             this.comboPrg.Size = new System.Drawing.Size(220, 28);
@@ -400,8 +450,8 @@ namespace Dashboard
             // 
             this.comboSem.FormattingEnabled = true;
             this.comboSem.Items.AddRange(new object[] {
-            "Semester 1",
-            "Semester 2"});
+            "S1",
+            "S2"});
             this.comboSem.Location = new System.Drawing.Point(188, 121);
             this.comboSem.Name = "comboSem";
             this.comboSem.Size = new System.Drawing.Size(110, 28);
@@ -412,10 +462,10 @@ namespace Dashboard
             // 
             this.comboYear.FormattingEnabled = true;
             this.comboYear.Items.AddRange(new object[] {
-            "Year 1",
-            "Year 2",
-            "Year 3",
-            "Year 4"});
+            "Y1",
+            "Y2",
+            "Y3",
+            "Y4"});
             this.comboYear.Location = new System.Drawing.Point(80, 121);
             this.comboYear.Name = "comboYear";
             this.comboYear.Size = new System.Drawing.Size(110, 28);
@@ -454,8 +504,8 @@ namespace Dashboard
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentGroup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSubGroupNumUP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGroupNumUP)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSubGroupNum)).EndInit();
@@ -468,20 +518,19 @@ namespace Dashboard
         #endregion
 
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDeleteUP;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textSubGroupIDup;
+        private System.Windows.Forms.TextBox textGroupIDup;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboProgramUP;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericSubGroupNumUP;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.NumericUpDown numericGroupNumUP;
+        private System.Windows.Forms.ComboBox comboSemUP;
+        private System.Windows.Forms.ComboBox comboYearUP;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnGroupInsertClear;
@@ -501,5 +550,9 @@ namespace Dashboard
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.DataGridView dataGridViewStudentGroup;
+        private System.Windows.Forms.Button btnGenerateID;
+        private System.Windows.Forms.Button btnEditUP;
+        private System.Windows.Forms.Button btnUpdateGroup;
+        private System.Windows.Forms.Button btnGenerateUP;
     }
 }

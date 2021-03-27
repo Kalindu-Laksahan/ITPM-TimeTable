@@ -155,7 +155,7 @@ namespace Dashboard
             // 
             // btnDeleteUP
             // 
-            this.btnDeleteUP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDeleteUP.BackColor = System.Drawing.Color.Tomato;
             this.btnDeleteUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteUP.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnDeleteUP.Location = new System.Drawing.Point(683, 415);

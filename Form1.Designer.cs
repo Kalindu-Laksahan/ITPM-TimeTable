@@ -55,7 +55,7 @@ namespace Dashboard
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelSideMenu.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panelSideMenu.Controls.Add(this.btnGenerateTable);
             this.panelSideMenu.Controls.Add(this.btnSessions);
             this.panelSideMenu.Controls.Add(this.btnstatistics);
@@ -75,7 +75,7 @@ namespace Dashboard
             // 
             // btnGenerateTable
             // 
-            this.btnGenerateTable.BackColor = System.Drawing.Color.SeaShell;
+            this.btnGenerateTable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnGenerateTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGenerateTable.FlatAppearance.BorderSize = 0;
             this.btnGenerateTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,7 +92,7 @@ namespace Dashboard
             // 
             // btnSessions
             // 
-            this.btnSessions.BackColor = System.Drawing.Color.Snow;
+            this.btnSessions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSessions.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSessions.FlatAppearance.BorderSize = 0;
             this.btnSessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -106,10 +106,11 @@ namespace Dashboard
             this.btnSessions.Text = "Sessions";
             this.btnSessions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSessions.UseVisualStyleBackColor = false;
+            this.btnSessions.Click += new System.EventHandler(this.btnSessions_Click);
             // 
             // btnstatistics
             // 
-            this.btnstatistics.BackColor = System.Drawing.Color.SeaShell;
+            this.btnstatistics.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnstatistics.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnstatistics.FlatAppearance.BorderSize = 0;
             this.btnstatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -126,7 +127,7 @@ namespace Dashboard
             // 
             // btnLocation
             // 
-            this.btnLocation.BackColor = System.Drawing.Color.Snow;
+            this.btnLocation.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLocation.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLocation.FlatAppearance.BorderSize = 0;
             this.btnLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -143,7 +144,7 @@ namespace Dashboard
             // 
             // btnTags
             // 
-            this.btnTags.BackColor = System.Drawing.Color.SeaShell;
+            this.btnTags.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnTags.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTags.FlatAppearance.BorderSize = 0;
             this.btnTags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -162,7 +163,7 @@ namespace Dashboard
             // 
             // btnStudentGroups
             // 
-            this.btnStudentGroups.BackColor = System.Drawing.Color.Snow;
+            this.btnStudentGroups.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnStudentGroups.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStudentGroups.FlatAppearance.BorderSize = 0;
             this.btnStudentGroups.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,7 +182,7 @@ namespace Dashboard
             // 
             // btnSubjects
             // 
-            this.btnSubjects.BackColor = System.Drawing.Color.SeaShell;
+            this.btnSubjects.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSubjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubjects.FlatAppearance.BorderSize = 0;
             this.btnSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -198,7 +199,7 @@ namespace Dashboard
             // 
             // btnLecturers
             // 
-            this.btnLecturers.BackColor = System.Drawing.Color.Snow;
+            this.btnLecturers.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLecturers.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLecturers.FlatAppearance.BorderSize = 0;
             this.btnLecturers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -215,7 +216,7 @@ namespace Dashboard
             // 
             // btnDaysHours
             // 
-            this.btnDaysHours.BackColor = System.Drawing.Color.SeaShell;
+            this.btnDaysHours.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnDaysHours.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDaysHours.FlatAppearance.BorderSize = 0;
             this.btnDaysHours.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -232,7 +233,7 @@ namespace Dashboard
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Snow;
+            this.btnHome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,6 +252,7 @@ namespace Dashboard
             // 
             // panelNameAndLogo
             // 
+            this.panelNameAndLogo.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panelNameAndLogo.Controls.Add(this.label3);
             this.panelNameAndLogo.Controls.Add(this.label2);
             this.panelNameAndLogo.Controls.Add(this.label1);
@@ -316,7 +318,7 @@ namespace Dashboard
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.labelTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(250, 0);

@@ -40,6 +40,7 @@ namespace Dashboard
             command.ExecuteNonQuery();
             MessageBox.Show("success");
             con.Close();
+            BindData();
         }
 
         void BindData()

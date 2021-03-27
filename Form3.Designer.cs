@@ -69,7 +69,7 @@ namespace Dashboard
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage1.Controls.Add(this.textRelatedTag);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.textTagCode);
@@ -162,7 +162,7 @@ namespace Dashboard
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage2.Controls.Add(this.btnEdit);
             this.tabPage2.Controls.Add(this.dataGridViewTag);
             this.tabPage2.Controls.Add(this.textRelatedTagUP);
@@ -229,7 +229,7 @@ namespace Dashboard
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelete.BackColor = System.Drawing.Color.Tomato;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

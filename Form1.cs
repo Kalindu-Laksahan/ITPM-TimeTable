@@ -79,5 +79,15 @@ namespace Dashboard
         {
             
         }
+
+        private void btnSessions_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = "Session Types";
+            this.panelLoader.Controls.Clear();
+            Form4 form4_vrb = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form4_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelLoader.Controls.Add(form4_vrb);
+            form4_vrb.Show();
+        }
     }
 }

@@ -253,6 +253,7 @@ namespace Dashboard
             this.numericGroupNumUP.Name = "numericGroupNumUP";
             this.numericGroupNumUP.Size = new System.Drawing.Size(220, 27);
             this.numericGroupNumUP.TabIndex = 16;
+            
             // 
             // comboSemUP
             // 

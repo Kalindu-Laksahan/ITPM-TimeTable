@@ -111,5 +111,10 @@ namespace Dashboard
             con.Close();
 
         }
+
+        private void dataGridViewTag_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

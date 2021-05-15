@@ -205,6 +205,7 @@ namespace Dashboard
             this.dataGridViewTag.Size = new System.Drawing.Size(712, 164);
             this.dataGridViewTag.TabIndex = 8;
             this.dataGridViewTag.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTag_CellClick);
+            this.dataGridViewTag.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTag_CellContentClick);
             // 
             // textRelatedTagUP
             // 

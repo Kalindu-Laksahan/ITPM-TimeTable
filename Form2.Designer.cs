@@ -79,6 +79,8 @@ namespace Dashboard
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage2.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.btnEditUP);
             this.tabPage2.Controls.Add(this.btnUpdateGroup);
             this.tabPage2.Controls.Add(this.btnGenerateUP);
@@ -278,7 +280,7 @@ namespace Dashboard
             this.comboYearUP.Name = "comboYearUP";
             this.comboYearUP.Size = new System.Drawing.Size(110, 28);
             this.comboYearUP.TabIndex = 14;
-            this.comboYearUP.Text = "Year 1";
+            this.comboYearUP.Text = "Year ";
             // 
             // label12
             // 
@@ -292,6 +294,8 @@ namespace Dashboard
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage1.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.btnGenerateID);
             this.tabPage1.Controls.Add(this.btnGroupInsertClear);
             this.tabPage1.Controls.Add(this.btnGroupInsert);

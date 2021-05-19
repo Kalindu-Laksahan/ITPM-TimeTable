@@ -70,6 +70,8 @@ namespace Dashboard
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage1.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.textRelatedTag);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.textTagCode);
@@ -164,6 +166,8 @@ namespace Dashboard
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage2.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.btnEdit);
             this.tabPage2.Controls.Add(this.dataGridViewTag);
             this.tabPage2.Controls.Add(this.textRelatedTagUP);

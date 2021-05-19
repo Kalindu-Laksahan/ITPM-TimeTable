@@ -142,22 +142,25 @@
   <data name="HOME ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HOME ICON.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Groups Icon (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Groups Icon (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="29b604ba552235fee4b771f3dde70837-32bits-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\29b604ba552235fee4b771f3dde70837-32bits-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Days Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Days Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Tag icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tag icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Days Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Days Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Groups Icon (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Groups Icon (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Time table icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Time table icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1236485" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1236485.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

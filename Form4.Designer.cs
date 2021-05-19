@@ -31,23 +31,23 @@ namespace Dashboard
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.labelTableC = new System.Windows.Forms.Label();
             this.labelC = new System.Windows.Forms.Label();
             this.dataGridViewConsecutive = new System.Windows.Forms.DataGridView();
             this.AddSessionC = new System.Windows.Forms.Button();
             this.ViewSessionC = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.labelP = new System.Windows.Forms.Label();
+            this.labelTableP = new System.Windows.Forms.Label();
             this.ViewSessionP = new System.Windows.Forms.Button();
             this.AddSessionP = new System.Windows.Forms.Button();
             this.dataGridViewParallel = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.labelN = new System.Windows.Forms.Label();
             this.labelTableN = new System.Windows.Forms.Label();
             this.ViewSessionN = new System.Windows.Forms.Button();
             this.AddSessionN = new System.Windows.Forms.Button();
             this.dataGridViewNon = new System.Windows.Forms.DataGridView();
-            this.labelN = new System.Windows.Forms.Label();
-            this.labelTableP = new System.Windows.Forms.Label();
-            this.labelP = new System.Windows.Forms.Label();
-            this.labelTableC = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsecutive)).BeginInit();
@@ -71,6 +71,8 @@ namespace Dashboard
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.labelTableC);
             this.tabPage1.Controls.Add(this.labelC);
             this.tabPage1.Controls.Add(this.dataGridViewConsecutive);
@@ -83,6 +85,14 @@ namespace Dashboard
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consecutive";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // labelTableC
+            // 
+            this.labelTableC.AutoSize = true;
+            this.labelTableC.Location = new System.Drawing.Point(22, 9);
+            this.labelTableC.Name = "labelTableC";
+            this.labelTableC.Size = new System.Drawing.Size(0, 20);
+            this.labelTableC.TabIndex = 20;
             // 
             // labelC
             // 
@@ -132,6 +142,8 @@ namespace Dashboard
             // 
             // tabPage2
             // 
+            this.tabPage2.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.labelP);
             this.tabPage2.Controls.Add(this.labelTableP);
             this.tabPage2.Controls.Add(this.ViewSessionP);
@@ -144,6 +156,22 @@ namespace Dashboard
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parallel";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // labelP
+            // 
+            this.labelP.AutoSize = true;
+            this.labelP.Location = new System.Drawing.Point(58, 279);
+            this.labelP.Name = "labelP";
+            this.labelP.Size = new System.Drawing.Size(0, 20);
+            this.labelP.TabIndex = 18;
+            // 
+            // labelTableP
+            // 
+            this.labelTableP.AutoSize = true;
+            this.labelTableP.Location = new System.Drawing.Point(39, 24);
+            this.labelTableP.Name = "labelTableP";
+            this.labelTableP.Size = new System.Drawing.Size(0, 20);
+            this.labelTableP.TabIndex = 17;
             // 
             // ViewSessionP
             // 
@@ -186,6 +214,8 @@ namespace Dashboard
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage3.BackgroundImage = global::Dashboard.Properties.Resources._1236485;
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.labelN);
             this.tabPage3.Controls.Add(this.labelTableN);
             this.tabPage3.Controls.Add(this.ViewSessionN);
@@ -197,6 +227,14 @@ namespace Dashboard
             this.tabPage3.Size = new System.Drawing.Size(874, 470);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Non Overlapping";
+            // 
+            // labelN
+            // 
+            this.labelN.AutoSize = true;
+            this.labelN.Location = new System.Drawing.Point(84, 251);
+            this.labelN.Name = "labelN";
+            this.labelN.Size = new System.Drawing.Size(0, 20);
+            this.labelN.TabIndex = 17;
             // 
             // labelTableN
             // 
@@ -244,38 +282,6 @@ namespace Dashboard
             this.dataGridViewNon.Size = new System.Drawing.Size(834, 178);
             this.dataGridViewNon.TabIndex = 0;
             this.dataGridViewNon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // labelN
-            // 
-            this.labelN.AutoSize = true;
-            this.labelN.Location = new System.Drawing.Point(84, 251);
-            this.labelN.Name = "labelN";
-            this.labelN.Size = new System.Drawing.Size(0, 20);
-            this.labelN.TabIndex = 17;
-            // 
-            // labelTableP
-            // 
-            this.labelTableP.AutoSize = true;
-            this.labelTableP.Location = new System.Drawing.Point(39, 24);
-            this.labelTableP.Name = "labelTableP";
-            this.labelTableP.Size = new System.Drawing.Size(0, 20);
-            this.labelTableP.TabIndex = 17;
-            // 
-            // labelP
-            // 
-            this.labelP.AutoSize = true;
-            this.labelP.Location = new System.Drawing.Point(58, 279);
-            this.labelP.Name = "labelP";
-            this.labelP.Size = new System.Drawing.Size(0, 20);
-            this.labelP.TabIndex = 18;
-            // 
-            // labelTableC
-            // 
-            this.labelTableC.AutoSize = true;
-            this.labelTableC.Location = new System.Drawing.Point(22, 9);
-            this.labelTableC.Name = "labelTableC";
-            this.labelTableC.Size = new System.Drawing.Size(0, 20);
-            this.labelTableC.TabIndex = 20;
             // 
             // Form4
             // 

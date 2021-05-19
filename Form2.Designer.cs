@@ -253,7 +253,6 @@ namespace Dashboard
             this.numericGroupNumUP.Name = "numericGroupNumUP";
             this.numericGroupNumUP.Size = new System.Drawing.Size(220, 27);
             this.numericGroupNumUP.TabIndex = 16;
-            
             // 
             // comboSemUP
             // 
@@ -342,6 +341,7 @@ namespace Dashboard
             this.btnGroupInsertClear.TabIndex = 14;
             this.btnGroupInsertClear.Text = "Clear";
             this.btnGroupInsertClear.UseVisualStyleBackColor = false;
+            this.btnGroupInsertClear.Click += new System.EventHandler(this.btnGroupInsertClear_Click);
             // 
             // btnGroupInsert
             // 

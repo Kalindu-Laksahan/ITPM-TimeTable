@@ -25,12 +25,12 @@ namespace Sprint_1_Pitigala
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            //lable1
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clearmethod();
+                      Clearmethod();
         }
 
         private void button2_Click(object sender, EventArgs e)

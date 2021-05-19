@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TimetableManagementDataSet4" targetNamespace="http://tempuri.org/TimetableManagementDataSet4.xsd" xmlns:mstns="http://tempuri.org/TimetableManagementDataSet4.xsd" xmlns="http://tempuri.org/TimetableManagementDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TimetableManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TimetableManagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sprint_1_Pitigala.Properties.Settings.GlobalReference.Default.TimetableManagementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StudentGroupTableAdapter" GeneratorDataComponentClassName="StudentGroupTableAdapter" Name="StudentGroup" UserDataComponentName="StudentGroupTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TimetableManagementConnectionString (Settings)" DbObjectName="TimetableManagement.dbo.StudentGroup" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT GroupID FROM dbo.StudentGroup</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GroupID" DataSetColumn="GroupID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TimetableManagementDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TimetableManagementDataSet4" msprop:Generator_UserDSName="TimetableManagementDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StudentGroup" msprop:Generator_TableClassName="StudentGroupDataTable" msprop:Generator_TableVarName="tableStudentGroup" msprop:Generator_TablePropName="StudentGroup" msprop:Generator_RowDeletingName="StudentGroupRowDeleting" msprop:Generator_RowChangingName="StudentGroupRowChanging" msprop:Generator_RowEvHandlerName="StudentGroupRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentGroupRowDeleted" msprop:Generator_UserTableName="StudentGroup" msprop:Generator_RowChangedName="StudentGroupRowChanged" msprop:Generator_RowEvArgName="StudentGroupRowChangeEvent" msprop:Generator_RowClassName="StudentGroupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

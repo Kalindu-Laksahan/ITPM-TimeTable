@@ -17,7 +17,8 @@ namespace Dashboard
             BindData();
         }
         const string ConnectionString = "Data Source=KALIPC\\ASUSSQL;Initial Catalog=TimeTableDB;Persist Security Info=True;User ID=sa;Password=kalindu";
-        SqlConnection con = new SqlConnection(ConnectionString);
+        const string ConnectionString1 = "Server=tcp:itpmtimetable.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=manager;Password=Sliit.lk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        SqlConnection con = new SqlConnection(ConnectionString1);
 
         private void btnAddTag_Click(object sender, EventArgs e)
         {

@@ -29,6 +29,7 @@ namespace Sprint_1_Pitigala
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Locations));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -60,18 +61,41 @@ namespace Sprint_1_Pitigala
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.locationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableDBDataSet1 = new Sprint_1_Pitigala.TimetableDBDataSet1();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.sessionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableDBDataSet = new Sprint_1_Pitigala.TimetableDBDataSet();
+            this.sessionsTableAdapter = new Sprint_1_Pitigala.TimetableDBDataSetTableAdapters.SessionsTableAdapter();
+            this.locationsTableAdapter = new Sprint_1_Pitigala.TimetableDBDataSet1TableAdapters.LocationsTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -95,10 +119,10 @@ namespace Sprint_1_Pitigala
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(928, 508);
+            this.tabPage1.Size = new System.Drawing.Size(928, 506);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Locations";
             // 
@@ -106,7 +130,7 @@ namespace Sprint_1_Pitigala
             // 
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(639, 217);
+            this.button2.Location = new System.Drawing.Point(648, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 47);
             this.button2.TabIndex = 11;
@@ -118,7 +142,7 @@ namespace Sprint_1_Pitigala
             // 
             this.button1.BackColor = System.Drawing.Color.Tomato;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(639, 105);
+            this.button1.Location = new System.Drawing.Point(648, 151);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 42);
             this.button1.TabIndex = 10;
@@ -259,10 +283,10 @@ namespace Sprint_1_Pitigala
             this.tabPage2.Controls.Add(this.comboBox3);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(928, 508);
+            this.tabPage2.Size = new System.Drawing.Size(928, 506);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Manage Locations";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -443,6 +467,145 @@ namespace Sprint_1_Pitigala
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.button8);
+            this.tabPage3.Controls.Add(this.button7);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.comboBox7);
+            this.tabPage3.Controls.Add(this.comboBox6);
+            this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(928, 506);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Manage Session Rooms";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(615, 351);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(170, 43);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "Update Room";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(22, 155);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(869, 167);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.Tomato;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(631, 84);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(129, 42);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Clear";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(631, 27);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(129, 40);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Add Room";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(19, 99);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 15);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Select Room";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(19, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(76, 15);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Session ID";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DataSource = this.locationsBindingSource;
+            this.comboBox7.DisplayMember = "Room_Name";
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(126, 94);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(204, 23);
+            this.comboBox7.TabIndex = 1;
+            this.comboBox7.ValueMember = "Room_Name";
+            // 
+            // locationsBindingSource
+            // 
+            this.locationsBindingSource.DataMember = "Locations";
+            this.locationsBindingSource.DataSource = this.timetableDBDataSet1;
+            // 
+            // timetableDBDataSet1
+            // 
+            this.timetableDBDataSet1.DataSetName = "TimetableDBDataSet1";
+            this.timetableDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataSource = this.sessionsBindingSource;
+            this.comboBox6.DisplayMember = "Session_ID";
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(126, 36);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(204, 23);
+            this.comboBox6.TabIndex = 0;
+            this.comboBox6.ValueMember = "Session_ID";
+            // 
+            // sessionsBindingSource
+            // 
+            this.sessionsBindingSource.DataMember = "Sessions";
+            this.sessionsBindingSource.DataSource = this.timetableDBDataSet;
+            // 
+            // timetableDBDataSet
+            // 
+            this.timetableDBDataSet.DataSetName = "TimetableDBDataSet";
+            this.timetableDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionsTableAdapter
+            // 
+            this.sessionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // locationsTableAdapter
+            // 
+            this.locationsTableAdapter.ClearBeforeFill = true;
+            // 
             // Locations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,6 +614,7 @@ namespace Sprint_1_Pitigala
             this.Controls.Add(this.tabControl1);
             this.Name = "Locations";
             this.Text = "Locations";
+            this.Load += new System.EventHandler(this.Locations_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -459,6 +623,13 @@ namespace Sprint_1_Pitigala
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -495,5 +666,20 @@ namespace Sprint_1_Pitigala
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private TimetableDBDataSet timetableDBDataSet;
+        private System.Windows.Forms.BindingSource sessionsBindingSource;
+        private TimetableDBDataSetTableAdapters.SessionsTableAdapter sessionsTableAdapter;
+        private TimetableDBDataSet1 timetableDBDataSet1;
+        private System.Windows.Forms.BindingSource locationsBindingSource;
+        private TimetableDBDataSet1TableAdapters.LocationsTableAdapter locationsTableAdapter;
     }
 }

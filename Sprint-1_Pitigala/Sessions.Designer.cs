@@ -90,12 +90,28 @@ namespace Sprint_1_Pitigala
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.sessionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableManagementDataSet6 = new Sprint_1_Pitigala.TimetableManagementDataSet6();
             this.lecturersTableAdapter = new Sprint_1_Pitigala.TimetableManagementDataSetTableAdapters.LecturersTableAdapter();
             this.subjectsTableAdapter = new Sprint_1_Pitigala.TimetableManagementDataSet1TableAdapters.SubjectsTableAdapter();
             this.subjectsTableAdapter1 = new Sprint_1_Pitigala.TimetableManagementDataSet2TableAdapters.SubjectsTableAdapter();
             this.tagTableAdapter = new Sprint_1_Pitigala.TimetableManagementDataSet3TableAdapters.TagTableAdapter();
             this.studentGroupTableAdapter = new Sprint_1_Pitigala.TimetableManagementDataSet4TableAdapters.StudentGroupTableAdapter();
             this.studentGroupTableAdapter1 = new Sprint_1_Pitigala.TimetableManagementDataSet5TableAdapters.StudentGroupTableAdapter();
+            this.sessionsTableAdapter = new Sprint_1_Pitigala.TimetableManagementDataSet6TableAdapters.SessionsTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentGroupBindingSource1)).BeginInit();
@@ -112,6 +128,10 @@ namespace Sprint_1_Pitigala
             ((System.ComponentModel.ISupportInitialize)(this.timetableManagementDataSet)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableManagementDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -121,6 +141,8 @@ namespace Sprint_1_Pitigala
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -150,10 +172,10 @@ namespace Sprint_1_Pitigala
             this.tabPage1.Controls.Add(this.comboBox3);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(929, 529);
+            this.tabPage1.Size = new System.Drawing.Size(929, 527);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Sessions";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -165,7 +187,7 @@ namespace Sprint_1_Pitigala
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Location = new System.Drawing.Point(220, 292);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(223, 21);
+            this.comboBox13.Size = new System.Drawing.Size(223, 23);
             this.comboBox13.TabIndex = 19;
             this.comboBox13.ValueMember = "SubGroupID";
             // 
@@ -186,7 +208,7 @@ namespace Sprint_1_Pitigala
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Location = new System.Drawing.Point(220, 247);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(223, 21);
+            this.comboBox12.Size = new System.Drawing.Size(223, 23);
             this.comboBox12.TabIndex = 18;
             this.comboBox12.ValueMember = "GroupID";
             // 
@@ -271,14 +293,14 @@ namespace Sprint_1_Pitigala
             // 
             this.textBox4.Location = new System.Drawing.Point(220, 387);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(223, 20);
+            this.textBox4.Size = new System.Drawing.Size(223, 21);
             this.textBox4.TabIndex = 11;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(220, 338);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 20);
+            this.textBox3.Size = new System.Drawing.Size(223, 21);
             this.textBox3.TabIndex = 10;
             // 
             // label4
@@ -330,7 +352,7 @@ namespace Sprint_1_Pitigala
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(220, 195);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(223, 21);
+            this.comboBox4.Size = new System.Drawing.Size(223, 23);
             this.comboBox4.TabIndex = 3;
             this.comboBox4.ValueMember = "TagName";
             // 
@@ -352,7 +374,7 @@ namespace Sprint_1_Pitigala
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(220, 146);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(223, 21);
+            this.comboBox3.Size = new System.Drawing.Size(223, 23);
             this.comboBox3.TabIndex = 2;
             this.comboBox3.ValueMember = "Sub_Code";
             // 
@@ -374,7 +396,7 @@ namespace Sprint_1_Pitigala
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(220, 99);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(223, 21);
+            this.comboBox2.Size = new System.Drawing.Size(223, 23);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.ValueMember = "Sub_Name";
             // 
@@ -396,7 +418,7 @@ namespace Sprint_1_Pitigala
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(220, 52);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(223, 21);
+            this.comboBox1.Size = new System.Drawing.Size(223, 23);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.ValueMember = "Lec_Name";
             // 
@@ -441,10 +463,10 @@ namespace Sprint_1_Pitigala
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(929, 529);
+            this.tabPage2.Size = new System.Drawing.Size(929, 527);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Manage Session Details";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -483,7 +505,7 @@ namespace Sprint_1_Pitigala
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Location = new System.Drawing.Point(504, 420);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(193, 21);
+            this.comboBox15.Size = new System.Drawing.Size(193, 23);
             this.comboBox15.TabIndex = 32;
             this.comboBox15.ValueMember = "SubGroupID";
             // 
@@ -495,7 +517,7 @@ namespace Sprint_1_Pitigala
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Location = new System.Drawing.Point(504, 381);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(193, 21);
+            this.comboBox14.Size = new System.Drawing.Size(193, 23);
             this.comboBox14.TabIndex = 31;
             this.comboBox14.ValueMember = "GroupID";
             // 
@@ -612,7 +634,7 @@ namespace Sprint_1_Pitigala
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Location = new System.Drawing.Point(504, 494);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 20);
+            this.textBox5.Size = new System.Drawing.Size(193, 21);
             this.textBox5.TabIndex = 19;
             // 
             // textBox6
@@ -620,7 +642,7 @@ namespace Sprint_1_Pitigala
             this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Location = new System.Drawing.Point(504, 458);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 20);
+            this.textBox6.Size = new System.Drawing.Size(193, 21);
             this.textBox6.TabIndex = 18;
             // 
             // comboBox8
@@ -631,9 +653,10 @@ namespace Sprint_1_Pitigala
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(150, 495);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(211, 21);
+            this.comboBox8.Size = new System.Drawing.Size(211, 23);
             this.comboBox8.TabIndex = 15;
             this.comboBox8.ValueMember = "TagName";
+            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
             // 
             // comboBox9
             // 
@@ -643,7 +666,7 @@ namespace Sprint_1_Pitigala
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Location = new System.Drawing.Point(150, 458);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(211, 21);
+            this.comboBox9.Size = new System.Drawing.Size(211, 23);
             this.comboBox9.TabIndex = 14;
             this.comboBox9.ValueMember = "Sub_Code";
             // 
@@ -655,7 +678,7 @@ namespace Sprint_1_Pitigala
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Location = new System.Drawing.Point(150, 420);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(211, 21);
+            this.comboBox10.Size = new System.Drawing.Size(211, 23);
             this.comboBox10.TabIndex = 13;
             this.comboBox10.ValueMember = "Sub_Name";
             // 
@@ -667,7 +690,7 @@ namespace Sprint_1_Pitigala
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Location = new System.Drawing.Point(150, 379);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(211, 21);
+            this.comboBox11.Size = new System.Drawing.Size(211, 23);
             this.comboBox11.TabIndex = 12;
             this.comboBox11.ValueMember = "Lec_Name";
             // 
@@ -749,6 +772,173 @@ namespace Sprint_1_Pitigala
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.linkLabel1);
+            this.tabPage3.Controls.Add(this.label19);
+            this.tabPage3.Controls.Add(this.label18);
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.comboBox16);
+            this.tabPage3.Controls.Add(this.comboBox6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(929, 527);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Time Allocation For a sessions";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(655, 407);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(243, 37);
+            this.button11.TabIndex = 11;
+            this.button11.Text = "Delete Added Time Allocation";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(18, 201);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(880, 177);
+            this.dataGridView2.TabIndex = 10;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(36, 148);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(68, 17);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "End Time";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(157, 144);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(183, 23);
+            this.textBox2.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(410, 67);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(258, 45);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Add Day And Time For a Session";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(404, 95);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 17);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(36, 108);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 17);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Starting Time";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(36, 67);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(33, 17);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Day";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(36, 31);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 17);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Session ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(157, 104);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(183, 23);
+            this.textBox1.TabIndex = 2;
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednsday",
+            "Thuesday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.comboBox16.Location = new System.Drawing.Point(157, 64);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(183, 24);
+            this.comboBox16.TabIndex = 1;
+            this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.comboBox16_SelectedIndexChanged);
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataSource = this.sessionsBindingSource;
+            this.comboBox6.DisplayMember = "Session_ID";
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(157, 25);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(183, 24);
+            this.comboBox6.TabIndex = 0;
+            this.comboBox6.ValueMember = "Session_ID";
+            // 
+            // sessionsBindingSource
+            // 
+            this.sessionsBindingSource.DataMember = "Sessions";
+            this.sessionsBindingSource.DataSource = this.timetableManagementDataSet6;
+            // 
+            // timetableManagementDataSet6
+            // 
+            this.timetableManagementDataSet6.DataSetName = "TimetableManagementDataSet6";
+            this.timetableManagementDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lecturersTableAdapter
             // 
             this.lecturersTableAdapter.ClearBeforeFill = true;
@@ -772,6 +962,10 @@ namespace Sprint_1_Pitigala
             // studentGroupTableAdapter1
             // 
             this.studentGroupTableAdapter1.ClearBeforeFill = true;
+            // 
+            // sessionsTableAdapter
+            // 
+            this.sessionsTableAdapter.ClearBeforeFill = true;
             // 
             // Sessions
             // 
@@ -800,6 +994,11 @@ namespace Sprint_1_Pitigala
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableManagementDataSet6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -871,5 +1070,21 @@ namespace Sprint_1_Pitigala
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private TimetableManagementDataSet6 timetableManagementDataSet6;
+        private System.Windows.Forms.BindingSource sessionsBindingSource;
+        private TimetableManagementDataSet6TableAdapters.SessionsTableAdapter sessionsTableAdapter;
     }
 }

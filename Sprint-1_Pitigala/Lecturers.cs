@@ -20,10 +20,8 @@ namespace Sprint_1_Pitigala
             BindData();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=U-PC\\SQLEXPRESS;Initial Catalog=TimetableManagement;Persist Security Info=True;User ID=sa;Password=uj");
-
-        
-
+        const string ConnectionString1 = "Server=tcp:itpmtimetable.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=manager;Password=Sliit.lk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        SqlConnection con = new SqlConnection(ConnectionString1);
         private void button3_Click(object sender, EventArgs e)
         {
             String Active_Days = "";

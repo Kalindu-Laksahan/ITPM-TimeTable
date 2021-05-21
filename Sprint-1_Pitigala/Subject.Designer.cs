@@ -72,6 +72,9 @@ namespace Sprint_1_Pitigala
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -88,7 +91,7 @@ namespace Sprint_1_Pitigala
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(900, 500);
+            this.tabControl1.Size = new System.Drawing.Size(933, 520);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -118,7 +121,7 @@ namespace Sprint_1_Pitigala
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(892, 474);
+            this.tabPage1.Size = new System.Drawing.Size(925, 494);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Subjects";
             // 
@@ -343,6 +346,9 @@ namespace Sprint_1_Pitigala
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.button7);
+            this.tabPage2.Controls.Add(this.button6);
+            this.tabPage2.Controls.Add(this.comboBox10);
             this.tabPage2.Controls.Add(this.comboBox9);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.button3);
@@ -366,7 +372,7 @@ namespace Sprint_1_Pitigala
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(892, 474);
+            this.tabPage2.Size = new System.Drawing.Size(925, 494);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Manage Subject Details";
             // 
@@ -376,7 +382,7 @@ namespace Sprint_1_Pitigala
             this.comboBox9.Items.AddRange(new object[] {
             "Semester 1",
             "Semester 2"});
-            this.comboBox9.Location = new System.Drawing.Point(203, 399);
+            this.comboBox9.Location = new System.Drawing.Point(203, 422);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(194, 21);
             this.comboBox9.TabIndex = 97;
@@ -387,9 +393,9 @@ namespace Sprint_1_Pitigala
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(42, 70);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(809, 206);
+            this.dataGridView1.Size = new System.Drawing.Size(842, 206);
             this.dataGridView1.TabIndex = 96;
             // 
             // button3
@@ -397,7 +403,7 @@ namespace Sprint_1_Pitigala
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.DodgerBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(629, 422);
+            this.button3.Location = new System.Drawing.Point(662, 445);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(192, 33);
             this.button3.TabIndex = 58;
@@ -410,9 +416,9 @@ namespace Sprint_1_Pitigala
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Tomato;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(706, 10);
+            this.button4.Location = new System.Drawing.Point(793, 17);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 29);
+            this.button4.Size = new System.Drawing.Size(80, 33);
             this.button4.TabIndex = 57;
             this.button4.Text = "Remove";
             this.button4.UseVisualStyleBackColor = false;
@@ -424,9 +430,9 @@ namespace Sprint_1_Pitigala
             this.button5.BackColor = System.Drawing.Color.DodgerBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(577, 10);
+            this.button5.Location = new System.Drawing.Point(674, 17);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 29);
+            this.button5.Size = new System.Drawing.Size(94, 34);
             this.button5.TabIndex = 56;
             this.button5.Text = "Edit";
             this.button5.UseVisualStyleBackColor = false;
@@ -442,7 +448,7 @@ namespace Sprint_1_Pitigala
             "1",
             "2",
             "3"});
-            this.comboBox5.Location = new System.Drawing.Point(719, 395);
+            this.comboBox5.Location = new System.Drawing.Point(752, 418);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 54;
@@ -456,7 +462,7 @@ namespace Sprint_1_Pitigala
             "0",
             "2",
             "3"});
-            this.comboBox6.Location = new System.Drawing.Point(719, 356);
+            this.comboBox6.Location = new System.Drawing.Point(752, 379);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(121, 21);
             this.comboBox6.TabIndex = 53;
@@ -470,7 +476,7 @@ namespace Sprint_1_Pitigala
             "0",
             "1",
             "2"});
-            this.comboBox7.Location = new System.Drawing.Point(719, 316);
+            this.comboBox7.Location = new System.Drawing.Point(752, 339);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(121, 21);
             this.comboBox7.TabIndex = 52;
@@ -484,7 +490,7 @@ namespace Sprint_1_Pitigala
             "0",
             "2",
             "3"});
-            this.comboBox8.Location = new System.Drawing.Point(719, 276);
+            this.comboBox8.Location = new System.Drawing.Point(752, 299);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(121, 21);
             this.comboBox8.TabIndex = 51;
@@ -492,7 +498,7 @@ namespace Sprint_1_Pitigala
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(203, 360);
+            this.textBox4.Location = new System.Drawing.Point(203, 383);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(194, 23);
             this.textBox4.TabIndex = 48;
@@ -500,7 +506,7 @@ namespace Sprint_1_Pitigala
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(203, 319);
+            this.textBox5.Location = new System.Drawing.Point(203, 342);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(194, 23);
             this.textBox5.TabIndex = 47;
@@ -508,7 +514,7 @@ namespace Sprint_1_Pitigala
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(203, 278);
+            this.textBox6.Location = new System.Drawing.Point(203, 301);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(194, 23);
             this.textBox6.TabIndex = 46;
@@ -518,7 +524,7 @@ namespace Sprint_1_Pitigala
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(500, 399);
+            this.label9.Location = new System.Drawing.Point(533, 422);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(189, 17);
@@ -530,7 +536,7 @@ namespace Sprint_1_Pitigala
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(500, 359);
+            this.label10.Location = new System.Drawing.Point(533, 382);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(147, 17);
@@ -542,7 +548,7 @@ namespace Sprint_1_Pitigala
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(500, 320);
+            this.label11.Location = new System.Drawing.Point(533, 343);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(152, 17);
@@ -554,7 +560,7 @@ namespace Sprint_1_Pitigala
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(500, 279);
+            this.label12.Location = new System.Drawing.Point(533, 302);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(171, 17);
@@ -565,7 +571,7 @@ namespace Sprint_1_Pitigala
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(59, 280);
+            this.label13.Location = new System.Drawing.Point(59, 303);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 17);
@@ -576,7 +582,7 @@ namespace Sprint_1_Pitigala
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(59, 320);
+            this.label14.Location = new System.Drawing.Point(59, 343);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(96, 17);
@@ -588,7 +594,7 @@ namespace Sprint_1_Pitigala
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(59, 401);
+            this.label15.Location = new System.Drawing.Point(59, 424);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(120, 17);
@@ -599,18 +605,58 @@ namespace Sprint_1_Pitigala
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(59, 360);
+            this.label16.Location = new System.Drawing.Point(59, 383);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(82, 17);
             this.label16.TabIndex = 38;
             this.label16.Text = "Offerd Year";
             // 
+            // comboBox10
+            // 
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "Select Offerd Year",
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox10.Location = new System.Drawing.Point(42, 20);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(167, 24);
+            this.comboBox10.TabIndex = 98;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(218, 17);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(124, 33);
+            this.button6.TabIndex = 99;
+            this.button6.Text = "Search Subjects";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(547, 17);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(98, 33);
+            this.button7.TabIndex = 100;
+            this.button7.Text = "Show All";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Subject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 500);
+            this.ClientSize = new System.Drawing.Size(933, 520);
             this.Controls.Add(this.tabControl1);
             this.Name = "Subject";
             this.Text = "Subject";
@@ -668,5 +714,8 @@ namespace Sprint_1_Pitigala
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.Button button7;
     }
 }

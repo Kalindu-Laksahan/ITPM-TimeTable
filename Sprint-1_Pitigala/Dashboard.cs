@@ -128,5 +128,35 @@ namespace Sprint_1_Pitigala
             func(Controls);
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            labName.Text = "Student Groups";
+            this.panel1.Controls.Clear();
+            Form2 fo2 = new Form2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fo2.FormBorderStyle = FormBorderStyle.None;
+            this.panel1.Controls.Add(fo2);
+            fo2.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            labName.Text = "Tags";
+            this.panel1.Controls.Clear();
+            FormTag ft = new FormTag() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ft.FormBorderStyle = FormBorderStyle.None;
+            this.panel1.Controls.Add(ft);
+            ft.Show();
+        }
+        
+        private void button11_Click(object sender, EventArgs e)
+        {
+            labName.Text = "Consecative / Parallel Sessions";
+            this.panel1.Controls.Clear();
+            Form4 fo4 = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fo4.FormBorderStyle = FormBorderStyle.None;
+            this.panel1.Controls.Add(fo4);
+            fo4.Show();
+        }
     }
 }

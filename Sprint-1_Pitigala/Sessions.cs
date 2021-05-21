@@ -19,7 +19,10 @@ namespace Sprint_1_Pitigala
             BindData();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=U-PC\\SQLEXPRESS;Initial Catalog=TimetableManagement;Persist Security Info=True;User ID=sa;Password=uj");
+        const string ConnectionString = "Server=tcp:itpmtimetable.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=manager;Password=Sliit.lk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        SqlConnection con = new SqlConnection(ConnectionString);
+
+        //SqlConnection con = new SqlConnection("Data Source=U-PC\\SQLEXPRESS;Initial Catalog=TimetableManagement;Persist Security Info=True;User ID=sa;Password=uj");
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -57,6 +60,8 @@ namespace Sprint_1_Pitigala
 
         private void Sessions_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'timetableManagementDataSet6.Sessions' table. You can move, or remove it, as needed.
+            this.sessionsTableAdapter.Fill(this.timetableManagementDataSet6.Sessions);
             // TODO: This line of code loads data into the 'timetableManagementDataSet5.StudentGroup' table. You can move, or remove it, as needed.
             this.studentGroupTableAdapter1.Fill(this.timetableManagementDataSet5.StudentGroup);
             // TODO: This line of code loads data into the 'timetableManagementDataSet4.StudentGroup' table. You can move, or remove it, as needed.
@@ -207,6 +212,31 @@ namespace Sprint_1_Pitigala
             DataTable dt = new DataTable();
             sd.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

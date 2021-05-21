@@ -19,7 +19,8 @@ namespace Sprint_1_Pitigala
             BindData();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=U-PC\\SQLEXPRESS;Initial Catalog=TimetableManagement;Persist Security Info=True;User ID=sa;Password=uj");
+        const string ConnectionString1 = "Server=tcp:itpmtimetable.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=manager;Password=Sliit.lk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        SqlConnection con = new SqlConnection(ConnectionString1);
 
         String Off_Sem;
 
@@ -148,6 +149,20 @@ namespace Sprint_1_Pitigala
 
             MessageBox.Show("Successfully Updated Subject Details...");
 
+            BindData();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("select * from Subjects where Off_Year = '" + comboBox10.Text + "' ", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
             BindData();
         }
     }
